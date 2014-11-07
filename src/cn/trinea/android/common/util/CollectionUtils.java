@@ -48,6 +48,7 @@ public class CollectionUtils {
      * @return join collection to string, separator is {@link #DEFAULT_JOIN_SEPARATOR}. if collection is empty, return
      *         ""
      */
+    @SuppressWarnings("rawtypes")
     public static String join(Iterable collection) {
         return collection == null ? "" : TextUtils.join(DEFAULT_JOIN_SEPARATOR, collection);
     }

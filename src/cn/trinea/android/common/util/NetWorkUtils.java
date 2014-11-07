@@ -30,6 +30,7 @@ public class NetWorkUtils {
      * @param context
      * @return
      */
+    @SuppressWarnings("deprecation")
     public static String getNetWorkType(Context context) {
         ConnectivityManager manager = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo;

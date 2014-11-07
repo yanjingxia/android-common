@@ -118,8 +118,6 @@ public class ImageCacheManager {
 
         OnImageSDCallbackListener imageCallBack = new OnImageSDCallbackListener() {
 
-            private static final long serialVersionUID = 1L;
-
             @Override
             public void onGetSuccess(String imageUrl, String imagePath, View view, boolean isInCache) {
                 if (view != null && view instanceof ImageView) {

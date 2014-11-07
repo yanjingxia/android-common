@@ -49,6 +49,7 @@ import cn.trinea.android.common.util.SystemUtils;
  */
 public class HttpCache {
 
+    @SuppressWarnings("unused")
     private Context                   context;
 
     /** http memory cache **/
@@ -76,6 +77,7 @@ public class HttpCache {
      * @param context
      * @param type get httpResponse whose type is type into memory as primary cache to improve performance
      */
+    @SuppressWarnings("unused")
     private HttpCache(Context context, int type) {
         this(context);
         this.type = type;
@@ -291,6 +293,7 @@ public class HttpCache {
      * 
      * @return the type
      */
+    @SuppressWarnings("unused")
     private int getType() {
         return type;
     }
