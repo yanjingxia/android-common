@@ -1,5 +1,9 @@
 package cn.trinea.android.common.util;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.security.MessageDigest;
 
 /**
@@ -36,6 +40,54 @@ public class DigestUtils {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+    
+    /**
+     * get file md5
+     * 
+     * @param str
+     * @return String
+     */
+    public static String md5File(File file) throws IOException {
+        InputStream is = null;
+        try {
+            is = new FileInputStream(file);
+            return md5(is);
+        } finally {
+            if (is != null) {
+                try {
+                    is.close();
+                } catch (IOException e) {
+                    // ignore;
+                }
+            }
+        }
+    }
+    
+    /**
+     * get md5 from inputstream
+     * 
+     * @param str
+     * @return String
+     */
+    public static String md5(InputStream is) throws IOException {
+        String md5 = "";
+ 
+        try {
+            byte[] bytes = new byte[4096];
+            int read = 0;
+            MessageDigest digest = MessageDigest.getInstance("MD5");
+ 
+            while ((read = is.read(bytes)) != -1) {
+                digest.update(bytes, 0, read);
+            }
+ 
+            md5 = new String(encodeHex(digest.digest()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+ 
+        return md5;
     }
 
     /**
