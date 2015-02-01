@@ -476,6 +476,30 @@ public class PackageUtils {
         }
         return -1;
     }
+    
+    /**
+     * get app version code
+     * 
+     * @param context
+     * @return
+     */
+    public static String getAppVersionName(Context context) {
+        if (context != null) {
+            PackageManager pm = context.getPackageManager();
+            if (pm != null) {
+                PackageInfo pi;
+                try {
+                    pi = pm.getPackageInfo(context.getPackageName(), 0);
+                    if (pi != null) {
+                        return pi.versionName;
+                    }
+                } catch (NameNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return null;
+    }
 
     /**
      * get system install location<br/>

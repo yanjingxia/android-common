@@ -23,6 +23,20 @@ public class AppUtils {
     }
 
     /**
+     * Sleep time
+     * Don't throw an InterruptedException exception
+     *
+     * @param time long time
+     */
+    public static void sleepIgnoreInterrupt(long time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    /**
      * whether this process is named with processName
      * 
      * @param context
