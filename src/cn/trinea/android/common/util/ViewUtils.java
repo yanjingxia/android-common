@@ -1,10 +1,15 @@
 package cn.trinea.android.common.util;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Context;
+import android.view.Menu;
 import android.view.View;
+import android.view.ViewConfiguration;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
@@ -258,5 +263,40 @@ public class ViewUtils {
             }
         }
         return descendedViewList;
+    }
+    
+    /**
+     * 设置总在ActionBar上先生OverflowButton，button对应的icon可在theme中指定
+     * @param context
+     */
+    public static void setOverflowButtonAlways(Context context) {
+        try {
+            ViewConfiguration config = ViewConfiguration.get(context);
+            Field menuKey = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+            menuKey.setAccessible(true);
+            menuKey.setBoolean(config, false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    /**
+     * 设置菜单总显示图标，需要在Activity中重载onMenuOpened函数进行调用，并最后调用父类重载函数
+     * @param featureId
+     * @param menu
+     */
+    public static void onMenuOpened(int featureId, Menu menu) {
+        if (featureId == Window.FEATURE_ACTION_BAR && menu != null) {
+            if (menu.getClass().getSimpleName().equals("MenuBuilder")) {
+                try {
+                    Method m = menu.getClass().getDeclaredMethod("setOptionalIconsVisible",
+                            Boolean.TYPE);
+                    m.setAccessible(true);
+                    m.invoke(menu, true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
