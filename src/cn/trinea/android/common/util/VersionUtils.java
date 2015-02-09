@@ -26,4 +26,32 @@ public class VersionUtils {
     public static Boolean isPreJellyBean() {
         return android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN;
     }
+    
+    public static boolean hasGingerbread() {
+        return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.GINGERBREAD;
+    }
+
+    public static boolean hasHoneycomb() {
+        return android.os. Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB;
+    }
+
+    public static boolean hasHoneycombMR1() {
+        return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB_MR1;
+    }
+
+    public static boolean hasIceCreamSandwich() {
+        return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH;
+    }
+
+    public static boolean isPreIceCreamSandwich() {
+        return android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH;
+    }
+
+    public static boolean hasJellyBean() {
+        return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN;
+    }
+
+    public static boolean hasKitkat() {
+        return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT;
+    }
 }
