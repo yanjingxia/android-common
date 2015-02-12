@@ -296,6 +296,7 @@ public final class ObjectAnimator extends ValueAnimator {
      * @param values A set of values that the animation will animate between over time.
      * @return An ObjectAnimator object that is set up to animate between the given values.
      */
+    @SuppressWarnings("unchecked")
     public static <T, V> ObjectAnimator ofObject(T target, Property<T, V> property,
             TypeEvaluator<V> evaluator, V... values) {
         ObjectAnimator anim = new ObjectAnimator(target, property);

@@ -1,6 +1,7 @@
 
 package cn.trinea.android.common.util;
 
+import java.io.File;
 import java.util.List;
 
 import android.app.ActivityManager;
@@ -11,7 +12,10 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.os.Environment;
 import android.os.StrictMode;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.os.EnvironmentCompat;
 
 /**
  * AppUtils
@@ -170,5 +174,43 @@ public class AppUtils {
             }
         }
         return false;
+    }
+
+    // 获取最好的缓存根目录
+    public static File getBestAvailableCacheRoot(Context context) {
+        File[] roots = ContextCompat.getExternalCacheDirs(context);
+        if (roots != null) {
+            for (File root : roots) {
+                if (root == null) {
+                    continue;
+                }
+
+                if (Environment.MEDIA_MOUNTED.equals(EnvironmentCompat.getStorageState(root))) {
+                    return root;
+                }
+            }
+        }
+
+        // Worst case, resort to internal storage
+        return context.getCacheDir();
+    }
+
+    // 获取最好的文件根目录
+    public static File getBestAvailableFilesRoot(Context context) {
+        File[] roots = ContextCompat.getExternalFilesDirs(context, null);
+        if (roots != null) {
+            for (File root : roots) {
+                if (root == null) {
+                    continue;
+                }
+
+                if (Environment.MEDIA_MOUNTED.equals(EnvironmentCompat.getStorageState(root))) {
+                    return root;
+                }
+            }
+        }
+
+        // Worst case, resort to internal storage
+        return context.getFilesDir();
     }
 }

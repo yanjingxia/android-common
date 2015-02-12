@@ -13,6 +13,7 @@ import android.os.Build;
 public abstract class BaseTask<Params, Progress, Result> extends
         AsyncTask<Params, Progress, Result> {
 
+    @SuppressWarnings("unchecked")
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public void exe(Params... params) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
