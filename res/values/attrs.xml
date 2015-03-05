@@ -30,8 +30,8 @@
         </attr>
     </declare-styleable>
     <declare-styleable name="ChangeColorIconWithText">
-        <attr name="icon" format="reference"></attr>
-        <attr name="color" format="color"></attr>
+        <attr name="change_icon" format="reference"></attr>
+        <attr name="change_color" format="color"></attr>
         <attr name="text" format="string"></attr>
         <attr name="text_size" format="dimension"></attr>
     </declare-styleable>
