@@ -8,5 +8,7 @@
     <!-- drop down list footer font color -->
     <color name="drop_down_list_footer_font_color">#000000</color>
     <color name="holo_blue">#FF33E5B5</color>
+    <color name="sidebar_gray">#AFAFAF</color>
+    <color name="sidebar_yellow">#F99503</color>
 
 </resources>
