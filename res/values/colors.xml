@@ -11,4 +11,8 @@
     <color name="sidebar_gray">#AFAFAF</color>
     <color name="sidebar_yellow">#F99503</color>
 
+    <color name="custom_button_unpressed_color">#fff44336</color>
+    <color name="custom_button_pressed_color">#ffd32f2f</color>
+    <color name="custom_button_ripple_color">#ffeeeeee</color>
+    <color name="custom_button_transparent">#00000000</color>
 </resources>

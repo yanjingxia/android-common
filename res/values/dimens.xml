@@ -7,5 +7,8 @@
     <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
     <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
     <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+    
+    <dimen name="custom_button_round_radius">0dp</dimen>
+    <dimen name="custom_button_btn_radius">2dp</dimen>
 
 </resources>
