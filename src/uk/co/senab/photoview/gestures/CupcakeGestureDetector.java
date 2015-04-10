@@ -15,6 +15,7 @@
  *******************************************************************************/
 package uk.co.senab.photoview.gestures;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.FloatMath;
 import android.util.Log;
@@ -22,6 +23,7 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
 
+@SuppressWarnings("deprecation")
 public class CupcakeGestureDetector implements GestureDetector {
 
     protected OnGestureListener mListener;
@@ -58,6 +60,7 @@ public class CupcakeGestureDetector implements GestureDetector {
         return false;
     }
 
+    @SuppressLint("FloatMath")
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {

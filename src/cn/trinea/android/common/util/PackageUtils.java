@@ -435,6 +435,7 @@ public class PackageUtils {
      * @return if params error or task stack is null, return null, otherwise retun whether the app is on the top of
      *         stack
      */
+    @SuppressWarnings("deprecation")
     public static Boolean isTopActivity(Context context, String packageName) {
         if (context == null || StringUtils.isEmpty(packageName)) {
             return null;

@@ -226,7 +226,8 @@ public class RoundedImageView extends ImageView {
     setImageDrawable(getDrawable());
   }
 
-  private Drawable resolveResource() {
+  @SuppressWarnings("deprecation")
+private Drawable resolveResource() {
     Resources rsrc = getResources();
     if (rsrc == null) { return null; }
 

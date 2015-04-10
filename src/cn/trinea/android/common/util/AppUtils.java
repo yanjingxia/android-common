@@ -91,6 +91,7 @@ public class AppUtils {
      * @return if application is in background return true, otherwise return
      *         false
      */
+    @SuppressWarnings("deprecation")
     public static boolean isApplicationInBackground(Context context) {
         ActivityManager am = (ActivityManager)context.getSystemService(Context.ACTIVITY_SERVICE);
         List<RunningTaskInfo> taskList = am.getRunningTasks(1);

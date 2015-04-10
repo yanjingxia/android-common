@@ -15,6 +15,7 @@
  *******************************************************************************/
 package uk.co.senab.photoview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
@@ -33,18 +34,17 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
-
 import java.lang.ref.WeakReference;
-
 import uk.co.senab.photoview.gestures.OnGestureListener;
 import uk.co.senab.photoview.gestures.VersionedGestureDetector;
 import uk.co.senab.photoview.log.LogManager;
 import uk.co.senab.photoview.scrollerproxy.ScrollerProxy;
-
 import static android.view.MotionEvent.ACTION_CANCEL;
 import static android.view.MotionEvent.ACTION_DOWN;
 import static android.view.MotionEvent.ACTION_UP;
 
+@SuppressLint("FloatMath")
+@SuppressWarnings("deprecation")
 public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
         OnGestureListener,
         ViewTreeObserver.OnGlobalLayoutListener {
@@ -203,7 +203,6 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
      * from {@link android.app.Activity#onDestroy()}. This is automatically called if you are using
      * {@link uk.co.senab.photoview.PhotoView}.
      */
-    @SuppressWarnings("deprecation")
     public void cleanup() {
         if (null == mImageView) {
             return; // cleanup already done
