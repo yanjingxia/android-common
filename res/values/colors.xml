@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="transparent">#00000000</color>
+    
     <!-- drop down list header font color -->
     <color name="drop_down_list_header_font_color">#000000</color>
     <!-- drop down list header second font color -->
@@ -15,4 +17,7 @@
     <color name="custom_button_pressed_color">#ffd32f2f</color>
     <color name="custom_button_ripple_color">#ffeeeeee</color>
     <color name="custom_button_transparent">#00000000</color>
+    
+    <color name="ui_color_pressed">#9c000000</color>
+    <color name="ui_ripple_color">#ffeeeeee</color>
 </resources>

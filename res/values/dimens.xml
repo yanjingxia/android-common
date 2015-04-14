@@ -10,4 +10,5 @@
     
     <dimen name="custom_button_round_radius">0dp</dimen>
 
+    <dimen name="ui_radius">2dp</dimen>
 </resources>

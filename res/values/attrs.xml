@@ -74,4 +74,17 @@
         <attr name="unpressed_src" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="UIButton">
+        <attr name="ui_color_pressed" format="color"/>
+        <attr name="ui_color_unpressed" format="color"/>
+        <attr name="ui_ripple_color" format="color"/>
+        <attr name="ui_ripple_alpha" format="integer"/>
+        <attr name="ui_ripple_duration" format="integer"/>
+        <attr name="ui_alpha_pressed" format="integer"/>
+        <attr name="ui_radius" format="dimension"/>
+        <attr name="ui_shape_type" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="rectangle" value="1"/>
+        </attr>
+    </declare-styleable>
 </resources>
