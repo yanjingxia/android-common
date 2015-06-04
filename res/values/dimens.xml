@@ -11,4 +11,6 @@
     <dimen name="custom_button_round_radius">0dp</dimen>
 
     <dimen name="ui_radius">2dp</dimen>
+    
+    <dimen name="cpb_stroke_width">4dp</dimen>
 </resources>
