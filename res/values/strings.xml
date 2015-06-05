@@ -25,4 +25,10 @@
         <item>RotateDown</item>
         <item>Accordion</item>
     </string-array>
+    
+    <string name="app_name">SweetAlertDialog</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading&#8230;</string>
 </resources>
