@@ -77,7 +77,51 @@ Api Guide：[TrineaAndroidCommon API Guide](http://trinea.github.io/doc/trinea_a
 #####4. 图片工具类
 (1)Drawable、Bitmap、byte数组相互转换; (2)根据url获得InputStream、Drawable、Bitmap  
 更多工具类介绍见[Android常用工具类](http://www.trinea.cn/android/android-common-utils/)
-   
+
+####5.新增加库部分
+(1)cn.pedant.SweetAlert [Android版的SweetAlert，清新文艺，快意灵动的甜心弹框]    (https://github.com/pedant/sweet-alert-dialog/blob/master/README.zh.md)
+
+(2)com.dd.circular-progress-button [Android上圆形的进度条按钮]
+(https://github.com/dmytrodanylyk/circular-progress-button)
+
+(3)com.jfeinstein.jazzyviewpager [支持各种切换动画的ViewPager]
+(https://github.com/jfeinstein10/JazzyViewPager)
+
+(4)com.liulishuo.share [支持第三方登录和分享]
+(https://github.com/lingochamp/ShareLoginLib)
+
+(5)com.nineoldandroids.animation [Android属性动画，支持到3.0以前的版本]
+(https://github.com/JakeWharton/NineOldAndroids)
+
+(6)com.pnikosis.materialishprogress [Material Design风格的进度条]
+(https://github.com/pnikosis/materialish-progress)
+
+(7)com.viewpagerindicator [ViewPage的各种指示器]
+(https://github.com/JakeWharton/ViewPagerIndicator)
+
+(8)me.drakeet.library [仿IOS风格支持按下效果和背景定制的Button、ImageView]
+(https://github.com/drakeet/AndroidUIView)
+
+(9)se.emilsjolander.stickylistheaders [固定头部的listview]
+(https://github.com/emilsjolander/StickyListHeaders)
+
+(10)uk.co.senab.photoview [支持缩放的ImageView]
+(https://github.com/chrisbanes/PhotoView)
+
+####6 新增加自定义view
+(1)BorderScrollView [支持滚动到顶部和底部回调的scrollview]
+(2)ChangeColorIconWithText [仿微信底部导航栏支持颜色渐变的view]  
+(3)CustomButton [自定义普通按钮，支持正常和按下背景颜色的定制]
+(4)CustomEditText [自定义文本输入框，增加清空按钮]
+(5)CustomImageButton [自定义图片按钮，支持正常和按下背景图片的定制]
+(6)CustomRippleButton [自定义Ripple按钮]
+(7)DropDownListView [支持下来刷新和底部加载更多的listview]
+(8)FlowLayout [浮动布局，例如各种热门标签的排列]
+(9)HackyViewPager[修复触摸bug导致崩溃的viewpager]
+(10)HorizontalListView [水平滚动的listview]
+(11)RoundedImageView [支持圆角或圆形边框的ImageView]
+(12)SideBar [仿通讯录右边的字母导航栏]
+(13)SlideOnePageGallery [支持滑动页的Gallery，已废弃] 
    
 ### Proguard
 ``` xml
