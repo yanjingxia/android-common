@@ -108,6 +108,8 @@ Api Guide：[TrineaAndroidCommon API Guide](http://trinea.github.io/doc/trinea_a
 (10)uk.co.senab.photoview [支持缩放的ImageView]
 (https://github.com/chrisbanes/PhotoView)
 
+(11)com.kyleduo.switchbutton [切换状态的仿Switch的Button]
+(https://github.com/kyleduo/SwitchButton)
 ####6 新增加自定义view
 (1)BorderScrollView [支持滚动到顶部和底部回调的scrollview]
 (2)ChangeColorIconWithText [仿微信底部导航栏支持颜色渐变的view]  
