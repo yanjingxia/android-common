@@ -114,6 +114,9 @@ Api Guide：[TrineaAndroidCommon API Guide](http://trinea.github.io/doc/trinea_a
 (12)com.klinker.android.link_builder [易于创建可点击链接的textview]
 (https://github.com/klinker24/Android-TextView-LinkBuilder)
 
+(13)com.daimajia.androidanimations [android上各种动画的实现效果]
+（https://github.com/daimajia/AndroidViewAnimations）
+
 ####6 新增加自定义view
 (1)BorderScrollView [支持滚动到顶部和底部回调的scrollview]
 (2)ChangeColorIconWithText [仿微信底部导航栏支持颜色渐变的view]  
