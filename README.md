@@ -79,7 +79,8 @@ Api Guide：[TrineaAndroidCommon API Guide](http://trinea.github.io/doc/trinea_a
 更多工具类介绍见[Android常用工具类](http://www.trinea.cn/android/android-common-utils/)
 
 ####5.新增加库部分
-(1)cn.pedant.SweetAlert [Android版的SweetAlert，清新文艺，快意灵动的甜心弹框]    (https://github.com/pedant/sweet-alert-dialog/blob/master/README.zh.md)
+(1)cn.pedant.SweetAlert [Android版的SweetAlert，清新文艺，快意灵动的甜心弹框]
+(https://github.com/pedant/sweet-alert-dialog/blob/master/README.zh.md)
 
 (2)com.dd.circular-progress-button [Android上圆形的进度条按钮]
 (https://github.com/dmytrodanylyk/circular-progress-button)
@@ -115,7 +116,10 @@ Api Guide：[TrineaAndroidCommon API Guide](http://trinea.github.io/doc/trinea_a
 (https://github.com/klinker24/Android-TextView-LinkBuilder)
 
 (13)com.daimajia.androidanimations [android上各种动画的实现效果]
-（https://github.com/daimajia/AndroidViewAnimations）
+(https://github.com/daimajia/AndroidViewAnimations)
+
+(14)com.orhanobut.logger [android pretty logger]
+(https://github.com/orhanobut/logger)
 
 ####6 新增加自定义view
 (1)BorderScrollView [支持滚动到顶部和底部回调的scrollview]
