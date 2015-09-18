@@ -88,38 +88,41 @@ Api Guide：[TrineaAndroidCommon API Guide](http://trinea.github.io/doc/trinea_a
 (3)com.jfeinstein.jazzyviewpager [支持各种切换动画的ViewPager]
 (https://github.com/jfeinstein10/JazzyViewPager)
 
-(4)com.liulishuo.share [支持第三方登录和分享]
-(https://github.com/lingochamp/ShareLoginLib)
-
-(5)com.nineoldandroids.animation [Android属性动画，支持到3.0以前的版本]
+(4)com.nineoldandroids.animation [Android属性动画，支持到3.0以前的版本]
 (https://github.com/JakeWharton/NineOldAndroids)
 
-(6)com.pnikosis.materialishprogress [Material Design风格的进度条]
+(5)com.pnikosis.materialishprogress [Material Design风格的进度条]
 (https://github.com/pnikosis/materialish-progress)
 
-(7)com.viewpagerindicator [ViewPage的各种指示器]
+(6)com.viewpagerindicator [ViewPage的各种指示器]
 (https://github.com/JakeWharton/ViewPagerIndicator)
 
-(8)me.drakeet.library [仿IOS风格支持按下效果和背景定制的Button、ImageView]
+(7)me.drakeet.library [仿IOS风格支持按下效果和背景定制的Button、ImageView]
 (https://github.com/drakeet/AndroidUIView)
 
-(9)se.emilsjolander.stickylistheaders [固定头部的listview]
+(8)se.emilsjolander.stickylistheaders [固定头部的listview]
 (https://github.com/emilsjolander/StickyListHeaders)
 
-(10)uk.co.senab.photoview [支持缩放的ImageView]
+(9)uk.co.senab.photoview [支持缩放的ImageView]
 (https://github.com/chrisbanes/PhotoView)
 
-(11)com.kyleduo.switchbutton [切换状态的仿Switch的Button]
+(10)com.kyleduo.switchbutton [切换状态的仿Switch的Button]
 (https://github.com/kyleduo/SwitchButton)
 
-(12)com.klinker.android.link_builder [易于创建可点击链接的textview]
+(11)com.klinker.android.link_builder [易于创建可点击链接的textview]
 (https://github.com/klinker24/Android-TextView-LinkBuilder)
 
-(13)com.daimajia.androidanimations [android上各种动画的实现效果]
+(12)com.daimajia.androidanimations [android上各种动画的实现效果]
 (https://github.com/daimajia/AndroidViewAnimations)
 
-(14)com.orhanobut.logger [android pretty logger]
+(13)com.orhanobut.logger [android pretty logger]
 (https://github.com/orhanobut/logger)
+
+(14)glide [图片加载库]
+(https://github.com/bumptech/glide)
+
+(15)retrofit [网络请求库，注解的方式]
+(https://github.com/square/retrofit)
 
 ####6 新增加自定义view
 (1)BorderScrollView [支持滚动到顶部和底部回调的scrollview]
